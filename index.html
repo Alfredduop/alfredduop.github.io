@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YourAppName – Coming Soon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #4a90e2, #50e3c2);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    .btn-primary {
+      background: #fff;
+      color: #4a90e2;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.4);
+      transition: background 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: #3b7dc4;
+      color: #e1f5f4;
+    }
+
+    main {
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      flex-grow: 1;
+    }
+    .mockup {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .mockup img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    section.features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    section.features div {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    section.features h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    section.features p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #f0f9ffdd;
+    }
+
+    form.subscribe {
+      max-width: 400px;
+      margin: 0 auto 3rem auto;
+      display: flex;
+      gap: 0.75rem;
+    }
+    form.subscribe input[type="email"] {
+      flex-grow: 1;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 9999px;
+      font-size: 1rem;
+      outline: none;
+    }
+    form.subscribe button {
+      background: #fff;
+      border: none;
+      padding: 0 1.5rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      color: #4a90e2;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    form.subscribe button:hover {
+      background: #3b7dc4;
+      color: #e1f5f4;
+    }
+
+    footer {
+      padding: 1.5rem 1.5rem;
+      text-align: center;
+      background: rgba(0,0,0,0.1);
+      font-size: 0.9rem;
+      color: #ddd;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    footer a {
+      color: #e1f5f4;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section.features {
+        grid-template-columns: 1fr;
+      }
+      .mockup img {
+        max-width: 100%;
+      }
+      form.subscribe {
+        flex-direction: column;
+      }
+      form.subscribe button {
+        padding: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>YourAppName</h1>
+    <p>The ultimate app that will change the way you do things. Coming soon to your device.</p>
+    <a href="#subscribe" class="btn-primary">Notify Me</a>
+  </header>
+
+  <main>
+    <div class="mockup">
+      <img src="https://via.placeholder.com/300x600.png?text=App+Mockup" alt="App Mockup" />
+    </div>
+
+    <section class="features" aria-label="Key features">
+      <div>
+        <h3>Easy to Use</h3>
+        <p>Intuitive and clean interface so you can focus on what matters.</p>
+      </div>
+      <div>
+        <h3>Fast & Reliable</h3>
+        <p>Powered by cutting-edge technology for seamless performance.</p>
+      </div>
+      <div>
+        <h3>Secure</h3>
+        <p>Your data is protected with best-in-class security protocols.</p>
+      </div>
+    </section>
+
+    <form id="subscribe" class="subscribe" aria-label="Subscribe to updates">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 YourAppName. All rights reserved.</p>
+    <p>
+      <a href="#" aria-label="Twitter">Twitter</a> |
+      <a href="#" aria-label="Facebook">Facebook</a> |
+      <a href="#" aria-label="GitHub">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    // Simple subscription alert for demo
+    document.querySelector('form.subscribe').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thanks for subscribing! We will notify you soon.');
+      e.target.reset();
+    });
+  </script>
+
+</body>
+</html>
