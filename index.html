@@ -1,20 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Find Your Perfect Share House – Coming Soon</title>
+  <title>ShareHouseMatch – Find Your Perfect Share House</title>
   <style>
-    /* Basic Reset */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    /* Reset and base */
     * {
       margin: 0; padding: 0; box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #333;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 60px;
+      padding: 80px 20px 40px;
+    }
+    /* Top nav */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 64px;
+      background: #ffffffee;
+      backdrop-filter: saturate(180%) blur(12px);
+      border-bottom: 1px solid #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+    }
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #4a90e2;
+      user-select: none;
+      letter-spacing: 0.03em;
+    }
+
+    main {
+      max-width: 480px;
+      width: 100%;
